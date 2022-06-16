@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Old+Standard+TT&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+/*  General styles */
+html{
+    font: normal 14px sans-serif;
+    font-family: 'Abahay Libre',sans-serif;
+    scroll-behavior: smooth !important;
+}
+body{
+    width: 100%;
+    background-color: #c5c0b9;
+    padding: 0;
+    margin: 0;
+}
+
+/*  Header navigation  */
+#header-placeholder{
+    width: 100%;
+    background-color: #525252;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header-placeholder .logo{
+    width: 20%;
+    display: flex;
+    padding-left: 2%;
+    margin: auto 0;
+}
+#header-placeholder .logo img{
+    width: 25%;
+
+}
+#header-placeholder .logo h1{
+    color: #c5c0b9;
+}
+#header-placeholder nav{
+    width: 60%;
+    display: flex;
+    float: right;
+    text-transform: uppercase;
+}
+#header-placeholder nav li{
+    list-style: none;
+    margin: auto;
+}
+#header-placeholder nav li a{
+    color: #c5c0b9;
+    text-decoration: none;
+    cursor: pointer;
+    margin: auto;
+}
+#header-placeholder nav li a:hover{
+    text-decoration: solid;
+    color: #fff;
+    font-weight: bold;
+}
