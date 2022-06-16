@@ -13,7 +13,19 @@ body{
     padding: 0;
     margin: 0;
 }
-
+.container{
+    display: flex;
+}
+.card{
+    display: block;
+    align-items: center;
+}
+.btn_call_to_action{
+    border-radius: 54px;
+    align-self: center;
+    text-align: center;
+    background-color: #e97810;
+}
 /*  Header navigation  */
 #header-placeholder{
     width: 100%;
@@ -55,5 +67,31 @@ body{
     text-decoration: solid;
     color: #fff;
     font-weight: bold;
+}
+/*  Section Home    */
+#Home{
+    display: block;
+}
+#Home img{
+    width: 55%;
+    display: block;
+}
+#Home .card{
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+#Home .card *{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 5%;
+}
+#Home .card .btn_call_to_action{
+    padding: 1%;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
 }
 /*    */
