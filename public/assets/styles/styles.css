@@ -75,6 +75,33 @@ header nav li a:hover{
     font-weight: bold;
 }
 
+/*  Footer                   */
+footer{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 10% 0 2.5% 0;
+}
+footer ul{
+    width: 40%;
+    display: flex;
+    margin: 5% auto;
+}
+footer ul li{
+    list-style: none;
+    margin: auto;
+}
+footer ul li a{
+    display: inline-block;
+    font-size: 40px;
+    margin: 10%;
+    opacity: 50%;
+    cursor: pointer;
+}
+footer ul li a:hover{
+    opacity: 100%;
+}
+
 /*  Section Home            */
 #Home{
     display: block;
