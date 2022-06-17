@@ -176,3 +176,32 @@ body{
     text-align: justify;
 }
 
+/*  Section Contact         */
+#Contact{
+    text-align: center;
+}
+#Contact h2{
+    padding: 5% 0;
+}
+#Contact .card .container{
+    width: 60%;
+    text-align: center;
+    align-items: center;
+    margin: 5% auto;
+}
+#Contact .card .container:first-child{
+    width: 40%;
+    margin: 0 auto;
+}
+#Contact .card .container input{
+    width: 60%;
+    margin: 2.5% auto;
+}
+#Contact .card .container .btn_call_to_action{
+    width: 30%;
+    margin: auto;
+}
+#Contact .card .container img{
+    width: 30%;
+    margin: auto;
+}
