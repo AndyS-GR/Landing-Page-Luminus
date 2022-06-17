@@ -119,6 +119,24 @@ body{
 #Our-Work .container .card img{
     width: 90%;
 }
+/*  Section Services        */
+#Services{
+    text-align: center;
+    display: block;
+    padding-bottom: 5%;
+}
+#Services h2{
+    padding: 5% 0;
+}
+#Services .container{
+    width: 60%;
+    display: flex;
+    margin: 5% auto;
+}
+#Services .container img{
+    width: 20%;
+    margin: auto;
+}
 
 
 
