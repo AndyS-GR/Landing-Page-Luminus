@@ -34,42 +34,42 @@ body{
 }
 
 /*  Header navigation       */
-#header-placeholder{
+header{
     width: 100%;
     background-color: #525252;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-#header-placeholder .logo{
+header .logo{
     width: 20%;
     display: flex;
     padding-left: 2%;
     margin: auto 0;
 }
-#header-placeholder .logo img{
+header .logo img{
     width: 25%;
 
 }
-#header-placeholder .logo h1{
+header .logo h1{
     color: #c5c0b9;
 }
-#header-placeholder nav{
+header nav{
     width: 60%;
     display: flex;
     float: right;
     text-transform: uppercase;
 }
-#header-placeholder nav li{
+header nav li{
     list-style: none;
     margin: auto;
 }
-#header-placeholder nav li a{
+header nav li a{
     color: #c5c0b9;
     text-decoration: none;
     cursor: pointer;
 }
-#header-placeholder nav li a:hover{
+header nav li a:hover{
     text-decoration: solid;
     color: #fff;
     font-weight: bold;
