@@ -16,51 +16,57 @@ body{
     padding: 0;
     margin: 0;
 }
+main{
+    display: block;
+}
 .container{
     display: flex;
 }
 .card{
     display: block;
-    align-items: center;
 }
 .btn_call_to_action{
+    padding: 0.5em 3em;
     border-radius: 54px;
     align-self: center;
     text-align: center;
     background-color: #e97810;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 .section-title{
-    padding: 5% 0;
     background-color: #525252;
     color: #c5c0b9;
+    padding: 1em 0;
     margin: 0;
 }
 
 /*  Header navigation       */
 header{
-    width: 100%;
+    width: 98vw;
     background-color: #525252;
     display: flex;
     align-items: center;
+    overflow: hidden;
+    padding: 1vh 1vw;
     justify-content: space-between;
 }
 header .logo{
     width: 20%;
     display: flex;
-    padding-left: 2%;
     margin: auto 0;
 }
 header .logo img{
-    width: 25%;
-
+    width: 5em;
 }
 header .logo h1{
     color: #c5c0b9;
+    margin: auto 0;
 }
 header nav{
     width: 60%;
     display: flex;
-    float: right;
     text-transform: uppercase;
 }
 header nav li{
@@ -86,18 +92,18 @@ footer{
     margin: 10% 0 2.5% 0;
 }
 footer ul{
-    width: 40%;
+    width: fit-content;
     display: flex;
     margin: 5% auto;
+    padding: 0;
 }
 footer ul li{
     list-style: none;
-    margin: auto;
 }
 footer ul li a{
     display: inline-block;
-    font-size: 40px;
-    margin: 10%;
+    font-size: 2em;
+    margin: auto 0.2em;
     opacity: 50%;
     cursor: pointer;
 }
@@ -108,82 +114,94 @@ footer ul li a:hover{
 /*  Section Home            */
 #Home{
     display: block;
+    width: 100%;
 }
 #Home img{
     width: 55%;
     display: block;
 }
 #Home .card{
-    width: 30%;
+    width: 35%;
+    height: fit-content;
     align-items: center;
     text-align: center;
-    margin: auto;
+    margin: auto 5%;
 }
 #Home .card *{
     width: 100%;
     display: inline-block;
     text-align: center;
-    margin: 5%;
+    margin: 0.5em auto;
 }
 #Home .card .btn_call_to_action{
-    padding: 1%;
-    width: 30%;
-    display: inline-block;
+    width: fit-content;
     text-align: center;
 }
 
 /*  Section Our-Work        */
 #Our-Work {
+    width: 100%;
     text-align: center;
 }
 #Our-Work .container{
     width: 80%;
+    height: 90vh;
     margin: auto;
 }
 #Our-Work .container .card{
-    width: 15%;
+    width: 70%;
     text-align: center;
     margin: auto;
 }
-#Our-Work .container .card *{
-    margin: 20% 0;
-}
 #Our-Work .container .card img{
-    width: 90%;
+    width: 10em;
 }
 
 /*  Section Services        */
 #Services{
+    width: 100%;
+    height: 100vh;
     text-align: center;
     display: block;
-    padding-bottom: 5%;
-}
-#Services h2{
-    padding: 5% 0;
 }
 #Services .container{
-    width: 60%;
+    width: 80%;
+    height: 70%;
     display: flex;
-    margin: 5% auto;
+    margin: auto;
+}
+#Services p{
+    margin: 5vh auto;
 }
 #Services .container img{
-    width: 20%;
+    width: 25%;
+    height: 75%;
+    border: 0.5em solid #565656;
+    border-radius: 10px;
+    cursor: pointer;
     margin: auto;
+}
+#Services .container img:hover{
+    width: 30%;
+    height: 80%;
 }
 
 /*  Section Testimonials    */
 #Testimonials{
     width: 80%;
+    height: 100vh;
     background-color: #525252;
-    padding: 0 10% 5% 10%;
+    padding: 0 10%;
     text-align: center;
     color: #c5c0b9;
 }
-#Testimonials h2{
-    padding: 5% 0;
+#Testimonials .container{
+    margin: 0 auto;
+    padding: 15% 0;
 }
 #Testimonials .container .card{
     width: 25%;
+    height: fit-content;
     margin: 0 auto;
 }
 #Testimonials .container .card .profile{
@@ -191,18 +209,21 @@ footer ul li a:hover{
     display: flex;
 }
 #Testimonials .container .card .profile img{
-    width: 45%;
+    width: 5em;
+    height: 5em;
     border: 10px solid #c5c0b9;
     border-radius: 50%;
     color: #c5c0b9;
 }
 #Testimonials .container .card .profile .card{
-    width: 45%;
+    width: fit-content;
+    height: 50%;
     align-items: center;
-    margin: 10% 5%;
+    margin: auto 5%;
+    text-align: left;
 }
 #Testimonials .container .card .profile .card h4{
-    text-align: left;
+    margin: 10% 0;
 }
 #Testimonials .container .card p{
     text-align: justify;
@@ -211,9 +232,7 @@ footer ul li a:hover{
 /*  Section Contact         */
 #Contact{
     text-align: center;
-}
-#Contact h2{
-    padding: 5% 0;
+    height: fit-content;
 }
 #Contact .card .container{
     width: 60%;
@@ -227,13 +246,82 @@ footer ul li a:hover{
 }
 #Contact .card .container input{
     width: 60%;
-    margin: 2.5% auto;
+    margin: auto;
 }
 #Contact .card .container .btn_call_to_action{
-    width: 30%;
+    width: fit-content;
     margin: auto;
 }
 #Contact .card .container img{
     width: 30%;
     margin: auto;
+}
+
+/*  Responsive Design       */
+@media (max-width: 600px) {
+    /*  Section Header          */
+    header{
+        display: block;
+    }
+    header .logo{
+        width: 100%;
+        justify-content: center;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav *{
+        margin: auto;
+    }
+    header nav li{
+        margin: auto;
+    }
+
+    /*  Section Home            */
+    #Home .container{
+        display: block;
+        height: 100vh;
+        text-align: center;
+    }
+    #Home .container .card{
+        height: 50vh;
+        margin: auto;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    #Home .container .card *{
+
+    }
+    #Home .container img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    /* Section Our Work         */
+    #Our-Work{
+        height: fit-content;
+    }
+    #Our-Work .container{
+        height: inherit;
+        display: grid;
+        text-align: center;
+    }
+    #Our-Work .container .card{
+        margin: auto;
+    }
+
+    /*  Section Testimonials    */
+    #Testimonials{
+        height: fit-content;
+    }
+    #Testimonials .container{
+        display: block;
+        height: fit-content;
+    }
+    #Testimonials .container .card{
+        width: 80%;
+    }
+    #Testimonials .container .card .profile{
+        justify-content: center;
+    }
 }
