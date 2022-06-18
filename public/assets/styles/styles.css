@@ -7,6 +7,9 @@ html{
     font-family: 'Abahay Libre',sans-serif;
     scroll-behavior: smooth !important;
 }
+p{
+    font-family: 'Old Standard TT', sans-serif;
+}
 body{
     width: 100%;
     background-color: #c5c0b9;
