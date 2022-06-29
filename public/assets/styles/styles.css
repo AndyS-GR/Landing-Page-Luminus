@@ -43,7 +43,7 @@ main{
 }
 
 /*  Header navigation       */
-header{
+#header-placeholder{
     width: 98vw;
     background-color: #525252;
     display: flex;
@@ -52,62 +52,62 @@ header{
     padding: 1vh 1vw;
     justify-content: space-between;
 }
-header .logo{
+#header-placeholder .logo{
     width: 20%;
     display: flex;
     margin: auto 0;
 }
-header .logo img{
+#header-placeholder .logo img{
     width: 5em;
 }
-header .logo h1{
+#header-placeholder .logo h1{
     color: #c5c0b9;
     margin: auto 0;
 }
-header nav{
+#header-placeholder nav{
     width: 60%;
     display: flex;
     text-transform: uppercase;
 }
-header nav li{
+#header-placeholder nav li{
     list-style: none;
     margin: auto;
 }
-header nav li a{
+#header-placeholder nav li a{
     color: #c5c0b9;
     text-decoration: none;
     cursor: pointer;
 }
-header nav li a:hover{
+#header-placeholder nav li a:hover{
     text-decoration: solid;
     color: #fff;
     font-weight: bold;
 }
 
 /*  Footer                   */
-footer{
+#footer-placeholder{
     width: 100%;
     text-align: center;
     align-items: center;
     margin: 10% 0 2.5% 0;
 }
-footer ul{
+#footer-placeholder ul{
     width: fit-content;
     display: flex;
     margin: 5% auto;
     padding: 0;
 }
-footer ul li{
+#footer-placeholder ul li{
     list-style: none;
 }
-footer ul li a{
+#footer-placeholder ul li a{
     display: inline-block;
     font-size: 2em;
     margin: auto 0.2em;
     opacity: 50%;
     cursor: pointer;
 }
-footer ul li a:hover{
+#footer-placeholder ul li a:hover{
     opacity: 100%;
 }
 
@@ -278,21 +278,21 @@ footer ul li a:hover{
 
 /*  Responsive Design       */
 @media (max-width: 600px) {
-    /*  Section Header          */
-    header{
+    /*  Section #header-placeholder          */
+    #header-placeholder{
         display: block;
     }
-    header .logo{
+    #header-placeholder .logo{
         width: 100%;
         justify-content: center;
     }
-    header nav{
+    #header-placeholder nav{
         width: 100%;
     }
-    header nav *{
+    #header-placeholder nav *{
         margin: auto;
     }
-    header nav li{
+    #header-placeholder nav li{
         margin: auto;
     }
 
